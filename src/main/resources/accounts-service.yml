@@ -13,3 +13,11 @@ spring:
 test:
   param1: Pooja
   param2: Thesia
+
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          servlet:
+            DispatcherServlet: DEBUG
