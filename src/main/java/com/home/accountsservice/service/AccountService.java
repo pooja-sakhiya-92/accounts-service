@@ -1,5 +1,7 @@
-package com.home.accountsservice;
+package com.home.accountsservice.service;
 
+import com.home.accountsservice.exception.AccountNotFoundException;
+import com.home.accountsservice.model.Account;
 import org.springframework.stereotype.Service;
 
 @Service

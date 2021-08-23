@@ -1,4 +1,4 @@
-package com.home.accountsservice;
+package com.home.accountsservice.model;
 
 public class Account {
 

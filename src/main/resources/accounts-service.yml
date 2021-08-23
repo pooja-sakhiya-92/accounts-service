@@ -4,11 +4,20 @@ spring:
   application:
     name: accounts-service
   cloud:
+    discovery:
+      enabled: false
     config:
       enabled: true
       import-check:
         enabled: false
       uri: "http://localhost:8888"
+  datasource:
+    url: jdbc:h2:mem:accounts
+    driverClassName: org.h2.Driver
+    username: root
+    password: root
+    jpa:
+      database-platform: org.hibernate.dialect.H2Dialect
 
 test:
   param1: Pooja
