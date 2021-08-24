@@ -14,7 +14,6 @@ public class Customer {
         this.contactFirstName = contactFirstName;
         this.contactLastName = contactLastName;
         this.customerNumber = customerNumber;
-        this.id = Long.valueOf ( String.valueOf ( customerNumber ) );
     }
 
     @Id
