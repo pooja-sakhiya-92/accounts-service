@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 import java.util.Optional;
 
 @Service
@@ -31,6 +32,12 @@ public class AccountService {
         if (2000 > account.getBalance ( ).intValue ( ))
             throw new AccountException ( "Please provide balance greater than 2000" );
         return true;
+    }
+
+    public Account addBalance(Long accountNumber,Long creditAmount) throws AccountException {
+        Account toCreditAccount = getByAccountNumber ( String.valueOf ( accountNumber ) );
+        toCreditAccount.setBalance ( BigDecimal.valueOf ( toCreditAccount.getBalance ().longValue () + creditAmount ));
+        return accountRepository.save ( toCreditAccount );
     }
 
     //TODO

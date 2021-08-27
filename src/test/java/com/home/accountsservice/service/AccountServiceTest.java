@@ -52,7 +52,7 @@ public class AccountServiceTest {
         assertEquals ( BigDecimal.valueOf ( 52000), account.getBalance () );
     }
 
-    private Account createDummyAccount ( ) {
+    public static Account createDummyAccount ( ) {
         Account testAccount = new Account ();
         testAccount.setBalance ( BigDecimal.valueOf ( 52000 ));
         testAccount.setAccountNumber ( 1L);

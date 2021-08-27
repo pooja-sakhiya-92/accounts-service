@@ -24,4 +24,9 @@ public class AccountsController {
         return new ResponseEntity<Account> (accountService.saveOrUpdate ( account ), HttpStatus.OK);
     }
 
+    @PostMapping("/accounts/credit")
+    public  ResponseEntity<Account> creditAccount(@RequestParam String accountNumber,@RequestParam Long creditAmount) throws AccountException {
+        return new ResponseEntity<Account> (accountService.addBalance ( Long.valueOf ( accountNumber ),creditAmount ), HttpStatus.OK);
+    }
+
 }
