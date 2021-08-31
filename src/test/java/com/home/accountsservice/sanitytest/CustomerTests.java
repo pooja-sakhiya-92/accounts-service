@@ -1,6 +1,7 @@
 package com.home.accountsservice.sanitytest;
 
 import com.home.accountsservice.model.Customer;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,7 +19,7 @@ import java.util.Map;
 public class CustomerTests {
 
     //@LocalServerPort
-    private int port = 2221;
+    private int port = 2222;
 
     @Autowired
     private TestRestTemplate restTemplate;
@@ -26,7 +27,7 @@ public class CustomerTests {
     public String BASE_URL = new StringBuilder().append("http://localhost:").append(port).toString();
 
     @Test
-    public void getCustomers() throws Exception {
+    public void addCustomers() throws Exception {
 
         this.restTemplate.postForEntity(BASE_URL + "/customer/add",
                 new Customer(1, "Test", "data"), String.class);

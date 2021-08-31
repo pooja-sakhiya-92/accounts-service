@@ -10,8 +10,9 @@ import mockit.Tested;
 import mockit.integration.junit4.JMockit;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(JMockit.class)
+@RunWith(SpringRunner.class)
 public class AccountFeaturesTest {
 
     @Injectable

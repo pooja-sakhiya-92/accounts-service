@@ -16,6 +16,7 @@ public class AccountsServiceApplication {
     public static void main(String[] args) {
 
         System.setProperty("spring.config.name", "account-server");
+        //System.setProperty("spring.config.name", "accounts-service");
         SpringApplication.run(AccountsServiceApplication.class, args);
     }
 

@@ -14,7 +14,7 @@ public class CustomerServiceTest {
     @Autowired
     CustomerService customerService;
 
-    private Customer pooja = new Customer ( 4, "pooja", "sakhiya-" );
+    private Customer pooja = new Customer ( 12, "pooja", "sakhiya-" );
 
     @BeforeEach
     public void createCustomer ( ) {
