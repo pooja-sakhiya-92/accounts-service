@@ -52,10 +52,16 @@ public class AccountServiceTest {
         assertEquals ( BigDecimal.valueOf ( 52000), account.getBalance () );
     }
 
-    public static Account createDummyAccount ( ) {
+    public static Account createDummyAccount () {
         Account testAccount = new Account ();
         testAccount.setBalance ( BigDecimal.valueOf ( 52000 ));
         testAccount.setAccountNumber ( 1L);
+        return testAccount;
+    }
+    public static Account createDummyAccount (Long balance ,Long accNum) {
+        Account testAccount = new Account ();
+        testAccount.setBalance ( BigDecimal.valueOf ( balance));
+        testAccount.setAccountNumber ( accNum);
         return testAccount;
     }
 

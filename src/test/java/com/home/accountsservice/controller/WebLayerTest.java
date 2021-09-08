@@ -4,6 +4,7 @@ import com.home.accountsservice.model.Customer;
 import com.home.accountsservice.service.CustomerService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -38,10 +39,13 @@ public class WebLayerTest {
 
     @Test
     public void getCustomer ( ) throws Exception {
-        when ( service.getCustomerById ( Mockito.anyLong ( ) ) ).thenReturn ( new Customer ( 1, "Test", "Pooja" ) );
+        when ( service.getCustomerById ( Mockito.anyLong ( ) ) ).thenReturn
+                ( new Customer ( 1, "Test", "Pooja" ) );
         MvcResult mvcResult = this.mockMvc.perform ( get ( "/customer/1" ) ).andReturn ( );
         String contentAsString = mvcResult.getResponse ( ).getContentAsString ( );
         System.out.println ( "Success: " + contentAsString );
         assert (contentAsString.isEmpty ( ) == false);
+
+
     }
 }

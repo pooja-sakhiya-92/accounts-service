@@ -17,8 +17,18 @@ public class AccountService {
     private AccountRepository accountRepository;
 
     public Account getByAccountNumber (String accountNumber) throws AccountException {
-        System.out.println ( "This is account service" );
-        return Optional.ofNullable ( accountRepository.findById ( BigDecimal.valueOf ( 1.00 ) )).get().orElse (  null);
+        return Optional.ofNullable ( accountRepository.findById (BigDecimal.valueOf (Long.valueOf ( accountNumber) ))).
+                get().orElse (  null);
+    }
+
+    public Account getAccountNumber (BigDecimal accountNumber) throws AccountException {
+       // Optional<Optional<Account>> account = Optional.ofNullable ( accountRepository.findById ( BigDecimal.valueOf ( Long.valueOf ( accountNumber ) ) ) );
+
+        Optional<Account> account = accountRepository.findById ( accountNumber );
+        if(account.isPresent ())
+            return  account.get ();
+        else
+            throw new AccountException ( "Account does not exist" );
     }
 
     public Account saveOrUpdate (Account account) throws AccountException {
