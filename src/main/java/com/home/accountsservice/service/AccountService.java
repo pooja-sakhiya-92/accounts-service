@@ -50,6 +50,10 @@ public class AccountService {
         return accountRepository.save ( toCreditAccount );
     }
 
+    public void creditBalance(Long amount) {
+        System.out.println(amount);
+    }
+
     //TODO
     /*Add methods for
      * Credit
