@@ -74,6 +74,10 @@ import java.util.Optional;
 		System.out.println(accNum + "--ministatement with data " + data);
 	}
 
+	public void enterPin(Long pin) {
+		System.out.println(pin);
+
+	}
 
 	//TODO
 	/*Add methods for
