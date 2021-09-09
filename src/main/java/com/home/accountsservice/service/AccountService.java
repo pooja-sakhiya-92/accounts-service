@@ -61,6 +61,11 @@ import java.util.Optional;
 
 	}
 
+	public void enterPin(Long pin) {
+		System.out.println(pin);
+
+	}
+
 	public void showhistory(Long accNum) {
 		System.out.println(accNum + "--history");
 	}
