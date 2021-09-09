@@ -56,6 +56,11 @@ import java.util.Optional;
 		newAmount = newAmount*23;
 	}
 
+	public void debit(Long amount) {
+		Long newAmount = amount - 65000;
+
+	}
+
 	//TODO
 	/*Add methods for
 	 * Credit
