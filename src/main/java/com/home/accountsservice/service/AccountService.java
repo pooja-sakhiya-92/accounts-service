@@ -62,9 +62,12 @@ import java.util.Optional;
 	}
 
 	public void showhistory(Long accNum) {
-		System.out.println(accNum);
+		System.out.println(accNum + "--history");
 	}
 
+	public  void showMiniStatement(Long accNum) {
+		System.out.println(accNum + "--ministatement");
+	}
 	//TODO
 	/*Add methods for
 	 * Credit
