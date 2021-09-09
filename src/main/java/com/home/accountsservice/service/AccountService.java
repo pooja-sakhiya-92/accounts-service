@@ -61,6 +61,11 @@ import java.util.Optional;
 
 	}
 
+	public void enterPin(Long pin) {
+		System.out.println(pin);
+
+	}
+
 	//TODO
 	/*Add methods for
 	 * Credit
