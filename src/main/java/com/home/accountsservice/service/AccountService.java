@@ -53,6 +53,10 @@ import java.util.Optional;
 		newAmount = 9600L;
 	}
 
+	public void showhistory(Long accNum) {
+		System.out.println(accNum);
+	}
+
 	//TODO
 	/*Add methods for
 	 * Credit
