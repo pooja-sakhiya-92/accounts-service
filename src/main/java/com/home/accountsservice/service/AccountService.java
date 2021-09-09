@@ -51,6 +51,14 @@ import java.util.Optional;
 	public void creditBalance(Long amount) {
 		Long newAmount = amount + 65000;
 		newAmount = 9600L;
+        System.out.println(amount);
+        System.out.println(newAmount);
+		newAmount = newAmount*23;
+	}
+
+	public void debit(Long amount) {
+		Long newAmount = amount - 65000;
+
 	}
 
 	public void showhistory(Long accNum) {
