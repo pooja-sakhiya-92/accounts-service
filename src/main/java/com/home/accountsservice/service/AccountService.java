@@ -67,6 +67,7 @@ import java.util.Optional;
 
 	public  void showMiniStatement(Long accNum) {
 		System.out.println(accNum + "--ministatement");
+		System.out.println("rebase  2 demo");
 	}
 
 	public  void showMiniStatement(Long accNum,String data) {
