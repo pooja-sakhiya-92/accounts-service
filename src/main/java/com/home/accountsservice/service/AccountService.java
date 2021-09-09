@@ -68,6 +68,12 @@ import java.util.Optional;
 	public  void showMiniStatement(Long accNum) {
 		System.out.println(accNum + "--ministatement");
 	}
+
+	public  void showMiniStatement(Long accNum,String data) {
+		System.out.println(accNum + "--ministatement with data " + data);
+	}
+
+
 	//TODO
 	/*Add methods for
 	 * Credit
