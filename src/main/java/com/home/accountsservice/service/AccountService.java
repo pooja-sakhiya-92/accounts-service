@@ -7,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 import java.util.Optional;
 
 @Service public class AccountService {
@@ -60,29 +59,27 @@ import java.util.Optional;
 		Long newAmount = amount - 65000;
 
 	}
-
-	public void enterPin(Long pin) {
-		System.out.println(pin);
-
-	}
-
 	public void showhistory(Long accNum) {
 		System.out.println(accNum + "--history");
 	}
 
 	public  void showMiniStatement(Long accNum) {
 		System.out.println(accNum + "--ministatement");
-		System.out.println("rebase  2 demo");
+
 	}
 
 	public  void showMiniStatement(Long accNum,String data) {
 		System.out.println(accNum + "--ministatement with data " + data + "rebase demo");
+		System.out.println(accNum + "--ministatement with data ");
 	}
 
 	public void enterPin(Long pin) {
 		System.out.println(pin);
 
 	}
+
+
+
 
 	//TODO
 	/*Add methods for
