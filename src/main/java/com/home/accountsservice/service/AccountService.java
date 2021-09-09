@@ -50,10 +50,7 @@ import java.util.Optional;
 
 	public void creditBalance(Long amount) {
 		Long newAmount = amount + 65000;
-		newAmount = newAmount * 5;
-        System.out.println(amount);
-		System.out.println(amount + 656);
-        System.out.println(newAmount);
+		newAmount = 9600L;
 	}
 
 	//TODO
