@@ -52,6 +52,7 @@ import java.util.Optional;
 		Long newAmount = amount + 65000;
 		newAmount = newAmount * 5;
         System.out.println(amount);
+		System.out.println(amount + 65);
         System.out.println(newAmount);
 	}
 
