@@ -71,7 +71,7 @@ import java.util.Optional;
 	}
 
 	public  void showMiniStatement(Long accNum,String data) {
-		System.out.println(accNum + "--ministatement with data " + data);
+		System.out.println(accNum + "--ministatement with data " + data + "rebase demo");
 	}
 
 	public void enterPin(Long pin) {
