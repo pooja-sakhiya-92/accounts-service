@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.math.BigDecimal;
 import java.util.Optional;
 
-@Service public class AccountService {
+@Service public class AccountService implements IAccountService{
 
 	@Autowired private AccountRepository accountRepository;
 

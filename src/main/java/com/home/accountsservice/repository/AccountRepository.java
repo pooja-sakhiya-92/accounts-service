@@ -1,9 +1,10 @@
 package com.home.accountsservice.repository;
 
-import com.home.accountsservice.model.Account;
+import java.math.BigDecimal;
+
 import org.springframework.data.repository.CrudRepository;
 
-import java.math.BigDecimal;
+import com.home.accountsservice.model.Account;
 
 public interface AccountRepository extends CrudRepository<Account, BigDecimal> {
 }
